@@ -6,17 +6,17 @@
 
 ## 📖 About The Project
 
-**letsmakeitbritish** is a content-driven web platform designed to highlight local craftsmanship, iconic heritage labels, and contemporary British lifestyle trends. The goal is to build an engaging, fast, and SEO-optimized space where readers can explore curated brand guides, editorial stories, and fashion insights.
+**letsmakeitbritish** is a content-driven WordPress blog designed to highlight local craftsmanship, iconic heritage labels, and contemporary British lifestyle trends. The platform delivers an engaging, fast, and SEO-optimized space where readers can explore curated brand guides, editorial stories, and fashion insights.
 
 ---
 
-## 🛠️ Tech Stack & Tools
+## 🛠️ Tech Stack & Setup
 
-* **Frontend:** HTML5, CSS3, JavaScript
-* **Styling:** Custom CSS / Tailwind CSS
-* **Backend & Database:** Node.js, Express, Firebase
-* **CMS & Blog Engine:** Dynamic post management and custom admin moderation
-* **Deployment & Version Control:** Git, GitHub, Netlify
+* **CMS:** WordPress
+* **Theme:** ColorMag (v4.2.4)
+* **Local Environment:** LocalWP
+* **Production Hosting:** Hostinger
+* **Version Control:** Git, GitHub
 
 ---
 
@@ -24,11 +24,10 @@
 
 ```text
 letsmakeitbritish/
-├── public/           # Static assets, images, and favicons
-├── src/              # Source code (components, pages, scripts)
-│   ├── assets/       # Brand graphics, icons, and styling sheets
-│   ├── js/           # Frontend logic and dynamic handlers
-│   └── views/        # Page templates and blog layouts
-├── server/           # Backend routing and database controllers
-├── package.json      # Project dependencies and metadata
-└── README.md         # Project documentation
+├── wp-content/
+│   ├── themes/
+│   │   └── colormag/     # ColorMag theme files and customizations
+│   └── plugins/          # Essential plugins for SEO, forms, and caching
+├── wp-config.php         # Core WordPress configuration
+├── .htaccess             # Apache server configuration and permalinks
+└── README.md             # Project documentation
